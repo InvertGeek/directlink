@@ -3,6 +3,7 @@
 put方法请求 /api/upload?name=文件名,请求体为文件二进制即可 \
 release中每个版本都为一条不同的线路,失效后可自行更换其他版本 \
 失效后不定时更新，release所有版本均有效,失效后会删除 \
+如果使用发现失效可到issue反馈 \
 下载: https://github.com/InvertGeek/DirectLink/releases
 
 ## 免责声明
