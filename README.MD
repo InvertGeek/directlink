@@ -6,6 +6,10 @@ release中每个版本都为一条不同的线路,失效后可自行更换其他
 如果使用发现失效可到issue反馈 \
 下载: https://github.com/InvertGeek/DirectLink/releases
 
+## 源码
+前端源码: https://github.com/InvertGeek/directlink-front \
+为了避免某些风险不提供后端源码,如果担心有安全隐患可使用虚拟机或docker运行
+
 ## 免责声明
 
 +   不能百分百保证文件永久有效,请自行对重要文件做好本地备份。
