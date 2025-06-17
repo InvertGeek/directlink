@@ -8,7 +8,8 @@ release中每个版本都为一条不同的线路,失效后可自行更换其他
 
 ## 源码
 前端源码: https://github.com/InvertGeek/directlink-front \
-为了避免某些风险不提供后端源码,如果担心有安全隐患可使用虚拟机或docker运行
+为了避免某些风险不提供后端源码,如果担心有安全隐患可使用虚拟机或docker运行 \
+也可以使用安卓端: https://github.com/InvertGeek/FastFile
 
 ## 免责声明
 
