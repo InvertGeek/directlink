@@ -17,3 +17,7 @@ release中每个版本都为一条不同的线路,失效后可自行更换其他
 +   请勿使用本项目上传不符合社会主义核心价值观的文件。
 +   可能会收集您上传的文件的统计信息到云端，包括文件url
 +   该项目仅用于学习和技术交流，开发者不承担任何由使用者的行为带来的法律责任。
+
+## Github Star
+
+[![Stargazers over time](https://starchart.cc/InvertGeek/directlink.svg?variant=adaptive)](https://starchart.cc/InvertGeek/directlink)
