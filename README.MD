@@ -11,6 +11,10 @@ release中每个版本都为一条不同的线路,失效后可自行更换其他
 为了避免某些风险不提供后端源码,如果担心有安全隐患可使用虚拟机或docker运行 \
 也可以使用安卓端: https://github.com/InvertGeek/FastFile
 
+## 失效问题
+推荐搭配: https://github.com/InvertGeek/mixlink 使用 \
+可实现失效自动切换备用地址
+
 ## 免责声明
 
 +   不能百分百保证文件永久有效,请自行对重要文件做好本地备份。
