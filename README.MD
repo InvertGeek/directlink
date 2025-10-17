@@ -6,6 +6,37 @@ release中每个版本都为一条不同的线路,失效后可自行更换其他
 如果使用发现失效可到issue反馈 \
 下载: https://github.com/InvertGeek/DirectLink/releases
 
+## python接入例子
+```python
+import requests
+
+
+def upload_file(file_path: str, file_name: str, url: str = "http://127.0.0.1:8080/api/upload", ):
+    """
+    使用 PUT 方法上传文件二进制
+    :param url: endpoint
+    :param file_path: 本地文件路径
+    :param file_name: 上传时的文件名
+    :return: 响应的 JSON 或文本
+    """
+    full_url = f"{url}?name={file_name}"
+    with open(file_path, "rb") as f:
+        file_data = f.read()
+
+    response = requests.put(full_url, data=file_data)
+    response.raise_for_status()  # 抛出异常（如果请求失败）
+
+    return response.text
+
+
+if __name__ == "__main__":
+    res = upload_file(
+        file_path="test.mp4",
+        file_name="test.mp4"
+    )
+    print(f"上传成功: {res}")
+```
+
 ## 源码
 前端源码: https://github.com/InvertGeek/directlink-front \
 为了避免某些风险不提供后端源码,如果担心有安全隐患可使用虚拟机或docker运行 \
