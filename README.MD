@@ -39,6 +39,46 @@ if __name__ == "__main__":
 
 ```
 
+## js接入例子
+```
+import fs from 'fs';
+import fetch from 'node-fetch';
+
+/**
+ * 使用 PUT 方法上传文件二进制
+ * @param {string} filePath 本地文件路径
+ * @param {string} fileName 上传时的文件名
+ * @param {string} url 上传接口地址（默认 http://127.0.0.1:8080/api/upload）
+ * @returns {Promise<string>} 响应的文件直链
+ */
+async function uploadFile(filePath, fileName, url = 'http://127.0.0.1:8080/api/upload') {
+    const fullUrl = `${url}?name=${encodeURIComponent(fileName)}`;
+    const fileData = fs.readFileSync(filePath);
+
+    const response = await fetch(fullUrl, {
+        method: 'PUT',
+        body: fileData
+    });
+
+    if (!response.ok) {
+        throw new Error(`上传失败：${response.status} ${response.statusText}`);
+    }
+
+    return await response.text();
+}
+
+(async () => {
+    console.log('开始上传')
+    try {
+        const res = await uploadFile('test.mp4', 'test.mp4');
+        console.log(`上传成功: ${res}`);
+    } catch (err) {
+        console.error(err);
+    }
+})();
+
+```
+
 ## 源码
 前端源码: https://github.com/InvertGeek/directlink-front \
 为了避免某些风险不提供后端源码,如果担心有安全隐患可使用虚拟机或docker运行 \
