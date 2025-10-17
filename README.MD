@@ -17,7 +17,7 @@ def upload_file(file_path: str, file_name: str, url: str = "http://127.0.0.1:808
     :param url: 填写directlink部署地址+api/upload
     :param file_path: 本地文件路径
     :param file_name: 上传时的文件名
-    :return: 响应的 JSON 或文本
+    :return: 响应文件直链
     """
     full_url = f"{url}?name={file_name}"
     with open(file_path, "rb") as f:
