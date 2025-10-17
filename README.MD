@@ -30,6 +30,7 @@ def upload_file(file_path: str, file_name: str, url: str = "http://127.0.0.1:808
 
 
 if __name__ == "__main__":
+    print('开始上传')
     res = upload_file(
         file_path="test.mp4",
         file_name="test.mp4"
