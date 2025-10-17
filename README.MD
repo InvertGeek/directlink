@@ -14,7 +14,7 @@ import requests
 def upload_file(file_path: str, file_name: str, url: str = "http://127.0.0.1:8080/api/upload", ):
     """
     使用 PUT 方法上传文件二进制
-    :param url: endpoint
+    :param url: 填写directlink部署地址+api/upload
     :param file_path: 本地文件路径
     :param file_name: 上传时的文件名
     :return: 响应的 JSON 或文本
@@ -35,6 +35,7 @@ if __name__ == "__main__":
         file_name="test.mp4"
     )
     print(f"上传成功: {res}")
+
 ```
 
 ## 源码
