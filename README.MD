@@ -40,7 +40,7 @@ if __name__ == "__main__":
 ```
 
 ## js接入例子
-```
+```javascript
 import fs from 'fs';
 import fetch from 'node-fetch';
 
