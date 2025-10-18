@@ -9,6 +9,8 @@ TG群: https://t.me/ivgeek \
 
 ## python接入例子
 ```python
+import urllib.parse
+
 import requests
 
 
@@ -20,7 +22,7 @@ def upload_file(file_path: str, file_name: str, url: str = "http://127.0.0.1:808
     :param file_name: 上传时的文件名
     :return: 响应文件直链
     """
-    full_url = f"{url}?name={file_name}"
+    full_url = f"{url}?name={urllib.parse.quote_plus(file_name)}"
     with open(file_path, "rb") as f:
         file_data = f.read()
 
@@ -34,7 +36,7 @@ if __name__ == "__main__":
     print('开始上传')
     res = upload_file(
         file_path="test.mp4",
-        file_name="test.mp4"
+        file_name="test啊.mp4"
     )
     print(f"上传成功: {res}")
 
