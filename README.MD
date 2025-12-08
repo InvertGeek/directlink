@@ -110,14 +110,8 @@ async function uploadFile(
 
 ---
 
-## 源码说明
-
-- **前端源码**：  
-  https://github.com/InvertGeek/directlink-front
-- 为避免潜在风险，当前 **不提供后端源码**
-- 如担心安全问题，建议在 **虚拟机或 Docker** 中运行
-- 也可使用 **安卓客户端**：  
-  https://github.com/InvertGeek/FastFile
+## 安卓客户端 
+https://github.com/InvertGeek/FastFile
 
 ---
 
