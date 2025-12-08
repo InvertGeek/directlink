@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(166, 182, 254, 0.21);
+}
+
+.shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, rgba(64, 91, 254, 0.66), rgba(171, 25, 254, 0.72));
+  background-clip: text; /* 适用于大多数浏览器 */
+  -webkit-background-clip: text; /* 适用于 WebKit 浏览器 */
+  color: transparent; /* 使文本颜色透明 */
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.text-hide {
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden; /* 隐藏溢出部分 */
+  text-overflow: ellipsis; /* 显示省略号 */
+  max-width: 100%; /* 限制宽度 */
+}
+
+

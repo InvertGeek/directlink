@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chriscdn/promise-semaphore": "3.0.1",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.0.0",
+    "@mui/material": "^6.0.0",
+    "@mui/styled-engine": "^6.0.0",
+    "@mui/styled-engine-sc": "^6.0.0",
+    "animate.css": "^4.1.1",
+    "axios": "1.8.2",
+    "axios-retry": "^4.5.0",
+    "base-x": "^5.0.1",
+    "copy-to-clipboard": "^3.3.3",
+    "dayjs": "^1.11.18",
+    "preact": "^10.22.1",
+    "react-file-drop": "^3.1.6",
+    "react-hot-toast": "^2.6.0",
+    "react-virtualized": "^9.22.6",
+    "sanitize.css": "^13.0.0",
+    "styled-components": "^6.1.17",
+    "valtio": "^2.1.4"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.0",
+    "sass-embedded": "^1.77.8",
+    "vite": "^5.3.3"
+  }
+}
